@@ -147,3 +147,4 @@ export async function ensurePatientProfile() {
 
     return patientId;
 }
+// Vercel deployment updates the API_BASE every time.
