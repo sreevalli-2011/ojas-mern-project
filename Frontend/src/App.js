@@ -1,9 +1,10 @@
-import logo from './logo.svg';
+
+
 import './App.css';
 import Navbar from './components/common/Navbar/Navbar';
 import HomePage from './components/common/HomePage/HomePage';
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
-import About_Us from './components/common/AboutUs/About_Us';
+import AboutUs from './components/common/AboutUs/About_Us';
 import ContactUs from './components/common/ContactUs/ContactUs';
 import Features from './components/common/Features/Features';
 import Login from './components/auth/Login/Login';
@@ -39,7 +40,7 @@ function App() {
 
         <Route path='/features' element={<Features />} />
 
-        <Route path='about_Us' element={<About_Us />} />
+        <Route path='/about-us' element={<AboutUs />} />
 
         <Route path='contact_Us' element={< ContactUs />} />
         <Route path='/login' element={<Login />} />
