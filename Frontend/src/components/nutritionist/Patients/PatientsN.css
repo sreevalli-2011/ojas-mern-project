@@ -1,0 +1,86 @@
+.patients_page{
+    padding:35px;
+    background-color:rgb(242,242,237);
+    min-height:100vh;
+}
+
+.patients_header{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    margin-bottom:25px;
+}
+
+.patients_header h1{
+    font-size:42px;
+    margin-bottom:8px;
+}
+
+.patients_header p{
+    color:gray;
+    font-size:18px;
+}
+
+/* Add Patient Button */
+
+.add_patient{
+    text-decoration:none;
+    background-color:rgb(107,155,122);
+    color:white;
+    padding:14px 24px;
+    border-radius:12px;
+    font-size:17px;
+    font-weight:600;
+    display:inline-block;
+    transition:0.2s;
+}
+
+.add_patient:hover{
+    background-color:rgb(92,139,107);
+    color:white;
+}
+
+/* Search */
+
+.search_box{
+    margin-bottom:25px;
+}
+
+.search_box input{
+    width:100%;
+    padding:15px 20px;
+    border:1px solid lightgray;
+    border-radius:12px;
+    font-size:17px;
+    outline:none;
+}
+
+.search_box input:focus{
+    border-color:rgb(107,155,122);
+}
+
+/* Empty Card */
+
+.patients_card{
+    background:white;
+    border:1px solid lightgray;
+    border-radius:25px;
+    min-height:500px;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+}
+
+.empty_state{
+    text-align:center;
+}
+
+.patient_icon{
+    font-size:70px;
+    margin-bottom:20px;
+}
+
+.empty_state p{
+    color:gray;
+    font-size:22px;
+}

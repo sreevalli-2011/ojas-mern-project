@@ -1,0 +1,89 @@
+.calendar_page {
+    padding: 35px;
+    background-color: rgb(242, 242, 237);
+    min-height: 100vh;
+}
+
+.calendar_header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 30px;
+}
+
+.calendar_header h1 {
+    font-size: 44px;
+    margin-bottom: 8px;
+    color: #0d2146;
+}
+
+.calendar_header p {
+    font-size: 18px;
+    color: #5f7191;
+}
+
+.schedule_btn {
+    background-color: rgb(107, 155, 122);
+    color: white;
+    text-decoration: none;
+    padding: 15px 28px;
+    border-radius: 14px;
+    font-size: 17px;
+    font-weight: 600;
+    transition: .2s;
+}
+
+.schedule_btn:hover {
+    background-color: rgb(92, 139, 107);
+}
+
+.schedule_heading {
+    font-size: 18px;
+    font-weight: 700;
+    color: #0d2146;
+    margin-bottom: 18px;
+}
+
+.calendar_card {
+    background: white;
+    border: 1px solid rgb(225, 225, 225);
+    border-radius: 25px;
+    min-height: 520px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, .05);
+}
+
+.empty_state {
+    text-align: center;
+}
+
+.calendar_icon {
+    font-size: 70px;
+    margin-bottom: 20px;
+}
+
+.empty_state p {
+    color: #97a4be;
+    font-size: 24px;
+}
+
+@media(max-width:850px) {
+
+    .calendar_header {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 20px;
+    }
+
+    .schedule_btn {
+        width: 100%;
+        text-align: center;
+    }
+
+    .calendar_header h1 {
+        font-size: 34px;
+    }
+
+}

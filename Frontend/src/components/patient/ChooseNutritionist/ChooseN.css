@@ -1,0 +1,176 @@
+.choose{
+    display:flex;
+    min-height:100vh;
+    background-color:rgb(242,242,237);
+}
+
+/* Sidebar */
+
+.sidebar{
+    width:240px;
+    background-color:white;
+    padding:25px;
+    display:flex;
+    flex-direction:column;
+    border-right:1px solid lightgray;
+}
+
+.loginas{
+    font-size:10px;
+    color:gray;
+    letter-spacing:1px;
+    margin-bottom:8px;
+}
+
+.profile{
+    background-color:white;
+    border:1px solid lightgray;
+    border-radius:12px;
+    padding:18px;
+    margin-bottom:25px;
+}
+
+.profile h3{
+    color:black;
+    font-size:22px;
+    margin-bottom:5px;
+}
+
+.profile p{
+    color:gray;
+    font-size:13px;
+}
+
+.sidebar ul{
+    list-style:none;
+    padding:0;
+}
+
+.sidebar li{
+    padding:15px;
+    margin-bottom:15px;
+    border-radius:10px;
+    cursor:pointer;
+}
+
+.activeitem{
+    background-color:rgb(230,240,233);
+    color:rgb(107,155,122);
+    font-weight:bold;
+}
+
+.logout{
+    margin-top:auto;
+    width:100%;
+    padding:12px;
+    background-color:rgb(107,155,122);
+    color:white;
+    border:none;
+    border-radius:20px;
+    cursor:pointer;
+}
+
+.logout:hover{
+    background-color:rgb(95,140,110);
+}
+
+/* Main */
+
+.main{
+    flex:1;
+    padding:40px;
+}
+
+.topbox{
+    background-color:white;
+    border:1px solid lightgray;
+    border-radius:15px;
+    padding:30px;
+    margin-bottom:30px;
+}
+
+.topbox h1{
+    color:black;
+    margin-bottom:10px;
+}
+
+.topbox p{
+    color:gray;
+    margin-bottom:20px;
+}
+
+.topbox input{
+    width:100%;
+    padding:12px;
+    border:1px solid lightgray;
+    border-radius:20px;
+    box-sizing:border-box;
+}
+
+/* Cards */
+
+.cards{
+    display:grid;
+    grid-template-columns:repeat(2,1fr);
+    gap:25px;
+}
+
+.card{
+    background-color:white;
+    border:1px solid lightgray;
+    border-radius:15px;
+    padding:25px;
+}
+
+.card img{
+    width:90px;
+    height:90px;
+    border-radius:50%;
+    object-fit:cover;
+    margin-bottom:15px;
+}
+
+.card h2{
+    color:black;
+    font-size:24px;
+    font-weight:bold;
+    margin-bottom:10px;
+}
+
+.card h4{
+    color:rgb(107,155,122);
+    font-size:16px;
+    margin-bottom:10px;
+}
+
+.card p{
+    color:gray;
+    margin-bottom:10px;
+    line-height:22px;
+}
+
+.about{
+    color:black;
+    margin-top:10px;
+}
+
+.clinic{
+    background-color:rgb(242,242,237);
+    border-radius: 10%;
+    padding:15px;
+    margin:20px 0;
+}
+
+.card button{
+    width:100%;
+    padding:12px;
+    background-color:rgb(107,155,122);
+    color:white;
+    border:none;
+    border-radius:20px;
+    cursor:pointer;
+}
+
+.card button:hover{
+    background-color:rgb(95,140,110);
+}

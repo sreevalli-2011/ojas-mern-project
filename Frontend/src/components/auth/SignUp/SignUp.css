@@ -1,0 +1,39 @@
+.signup {
+    width: 500px;
+    margin: 60px auto;
+    text-align: center;
+}
+
+.signup h1 {
+    margin-bottom: 40px;
+    color: rgb(107, 155, 122);
+}
+
+.signup-box {
+    margin-bottom: 30px;
+    padding: 30px;
+    border: 1px solid rgb(107, 155, 122);
+    border-radius: 15px;
+}
+
+.signup-box h2 {
+    margin-bottom: 20px;
+}
+
+.signup-box button {
+    padding: 10px 30px;
+    background-color: rgb(107, 155, 122);
+    color: white;
+    border: none;
+    border-radius: 25px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+.signup-box button:hover {
+    background-color: rgb(90, 135, 105);
+}
+
+.signup-box a {
+    text-decoration: none;
+}

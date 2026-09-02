@@ -1,0 +1,137 @@
+.patientnext {
+    background-color: rgb(242, 242, 237);
+    min-height: 100vh;
+    padding: 30px;
+}
+
+.patientnext_card {
+    background-color: white;
+    border-radius: 22px;
+    padding: 30px;
+    border: 1px solid rgb(230, 230, 230);
+}
+
+.patientnext_header {
+    margin-bottom: 30px;
+}
+
+.patientnext_header h1 {
+    font-size: 28px;
+    margin-bottom: 8px;
+}
+
+.patientnext_header p {
+    color: gray;
+    font-size: 18px;
+}
+
+.patient_form {
+    background-color: rgb(249, 249, 249);
+    border: 1px solid rgb(230, 230, 230);
+    border-radius: 18px;
+    padding: 25px;
+}
+
+.form_heading {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 25px;
+}
+
+.form_heading h2 {
+    font-size: 26px;
+}
+
+.cancel_link {
+    text-decoration: none;
+    color: gray;
+    font-size: 18px;
+}
+
+.row {
+    display: flex;
+    gap: 20px;
+    margin-bottom: 22px;
+}
+
+.row div {
+    flex: 1;
+}
+
+.patient_form p {
+    margin-bottom: 8px;
+    margin-top: 15px;
+    font-weight: 600;
+}
+
+.patient_form input,
+.patient_form select,
+.patient_form textarea {
+    width: 100%;
+    padding: 14px;
+    border: 1px solid lightgray;
+    border-radius: 12px;
+    font-size: 16px;
+    outline: none;
+    box-sizing: border-box;
+}
+
+.patient_form textarea {
+    resize: vertical;
+    margin-bottom: 15px;
+}
+
+.patient_form input:focus,
+.patient_form select:focus,
+.patient_form textarea:focus {
+    border-color: rgb(107, 155, 122);
+}
+
+.buttons {
+    display: flex;
+    justify-content: flex-end;
+    gap: 15px;
+    margin-top: 25px;
+}
+
+.cancel_btn {
+    text-decoration: none;
+    color: gray;
+    font-size: 17px;
+    padding: 12px 22px;
+    display: flex;
+    align-items: center;
+}
+
+.buttons button {
+    background-color: rgb(107, 155, 122);
+    color: white;
+    border: none;
+    border-radius: 12px;
+    padding: 14px 28px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+.buttons button:hover {
+    background-color: rgb(92, 139, 107);
+}
+
+@media(max-width:900px) {
+
+    .row {
+        flex-direction: column;
+    }
+
+    .buttons {
+        flex-direction: column;
+    }
+
+    .buttons button,
+    .cancel_btn {
+        width: 100%;
+        justify-content: center;
+    }
+
+}

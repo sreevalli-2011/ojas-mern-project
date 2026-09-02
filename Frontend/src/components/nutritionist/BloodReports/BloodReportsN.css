@@ -1,0 +1,178 @@
+.blood_page {
+    background-color: rgb(242, 242, 237);
+    min-height: 100vh;
+    padding: 30px;
+}
+
+.blood_header {
+    background: white;
+    border: 1px solid rgb(230, 230, 230);
+    border-radius: 25px;
+    padding: 30px 35px;
+    margin-bottom: 30px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.06);
+}
+
+.blood_header h1 {
+    font-size: 48px;
+    margin-bottom: 10px;
+}
+
+.blood_header p {
+    color: gray;
+    font-size: 20px;
+}
+
+.blood_layout {
+    display: grid;
+    grid-template-columns: 1fr 1.6fr;
+    gap: 25px;
+}
+
+.upload_card,
+.history_card {
+    background: white;
+    border: 1px solid rgb(230, 230, 230);
+    border-radius: 25px;
+    padding: 30px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.06);
+}
+
+.card_title {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    margin-bottom: 18px;
+}
+
+.card_title h2 {
+    font-size: 30px;
+    margin: 0;
+}
+
+.icon {
+    font-size: 26px;
+}
+
+hr {
+    border: none;
+    border-top: 1px solid lightgray;
+    margin-bottom: 25px;
+}
+
+.upload_card p {
+    margin-top: 18px;
+    margin-bottom: 8px;
+    font-weight: 600;
+}
+
+.upload_card select,
+.upload_card input,
+.upload_card textarea {
+    width: 100%;
+    padding: 14px;
+    border: 1px solid lightgray;
+    border-radius: 12px;
+    font-size: 16px;
+    outline: none;
+    box-sizing: border-box;
+}
+
+.upload_card textarea {
+    resize: vertical;
+}
+
+.upload_card select:focus,
+.upload_card input:focus,
+.upload_card textarea:focus {
+    border-color: rgb(107, 155, 122);
+}
+
+.two_fields {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+}
+
+.save_btn {
+    width: 100%;
+    margin-top: 28px;
+    background-color: rgb(7, 18, 48);
+    color: white;
+    border: none;
+    border-radius: 14px;
+    padding: 16px;
+    font-size: 18px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: 0.2s;
+}
+
+.save_btn:hover {
+    background-color: rgb(20, 35, 75);
+}
+
+.history_card {
+    min-height: 650px;
+}
+
+.empty_state {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 40px;
+}
+
+.empty_icon {
+    font-size: 90px;
+    margin-bottom: 20px;
+    opacity: 0.5;
+}
+
+.empty_state p {
+    color: gray;
+    font-size: 24px;
+}
+
+@media(max-width:1100px) {
+
+    .blood_layout {
+        grid-template-columns: 1fr;
+    }
+
+    .history_card {
+        min-height: 400px;
+    }
+
+}
+
+@media(max-width:768px) {
+
+    .blood_page {
+        padding: 20px;
+    }
+
+    .blood_header h1 {
+        font-size: 36px;
+    }
+
+    .blood_header p {
+        font-size: 17px;
+    }
+
+    .two_fields {
+        grid-template-columns: 1fr;
+    }
+
+    .card_title h2 {
+        font-size: 24px;
+    }
+
+    .empty_state p {
+        font-size: 20px;
+    }
+
+}

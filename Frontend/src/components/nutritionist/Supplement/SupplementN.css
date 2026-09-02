@@ -1,0 +1,81 @@
+.supplement_page {
+    background-color: rgb(242, 242, 237);
+    min-height: 100vh;
+    padding: 35px;
+}
+
+.supplement_header {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    margin-bottom: 30px;
+    background: white;
+    border: 1px solid rgb(230, 230, 230);
+    border-radius: 25px;
+    padding: 35px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.06);
+}
+
+.supplement_header h1 {
+    font-size: 48px;
+    margin-bottom: 8px;
+}
+
+.supplement_header p {
+    color: gray;
+    font-size: 20px;
+}
+
+.assign_btn {
+    background-color: rgb(107, 155, 122);
+    color: white;
+    text-decoration: none;
+    padding: 16px 28px;
+    border-radius: 14px;
+    font-size: 18px;
+    font-weight: 600;
+    transition: 0.2s;
+}
+
+.assign_btn:hover {
+    background-color: rgb(92, 139, 107);
+}
+
+.supplement_card {
+    background: white;
+    border: 1px solid rgb(230, 230, 230);
+    border-radius: 25px;
+    min-height: 500px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.06);
+}
+
+.empty_state {
+    text-align: center;
+}
+
+.supplement_icon {
+    font-size: 80px;
+    margin-bottom: 25px;
+}
+
+.empty_state p {
+    color: gray;
+    font-size: 24px;
+}
+
+@media(max-width:900px) {
+
+    .supplement_header {
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .assign_btn {
+        width: 100%;
+        text-align: center;
+    }
+
+}

@@ -1,0 +1,30 @@
+.loginpage{
+    text-align: center;
+    margin-top: 80px;
+}
+
+.loginpage h1{
+    margin-bottom: 50px;
+}
+
+.login-box{
+    margin-bottom: 50px;
+}
+
+.login-box h2{
+    margin-bottom: 15px;
+}
+
+.login-box button{
+    width: 120px;
+    height: 40px;
+    background-color: var(--button_color);
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.login-box button:hover{
+    background-color: var(--button_color);
+}
