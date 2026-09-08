@@ -4,6 +4,10 @@ const { protect } = require("../middleware/auth");
 
 const router = express.Router();
 
+// ==========================================
+// 1. PREVIOUS EXISTING ROUTES (మీ పాత కోడ్)
+// ==========================================
+
 // @route   GET /api/patients
 // @desc    Get all patients (for a nutritionist) or own profile (for a patient)
 router.get("/", protect, async (req, res) => {
@@ -37,10 +41,7 @@ router.get("/:id", protect, async (req, res) => {
 });
 
 // @route   POST /api/patients
-// @desc    Create a patient profile. A patient creates their own profile
-//          (user = themselves). A nutritionist can also add a patient's
-//          clinical record directly, before that patient has an account
-//          (nutritionist = themselves, fullName/email stored directly).
+// @desc    Create a patient profile.
 router.post("/", protect, async (req, res) => {
     try {
         const patientData = { ...req.body };
@@ -81,6 +82,34 @@ router.delete("/:id", protect, async (req, res) => {
     } catch (error) {
         console.error(error);
         res.status(500).json({ message: error.message });
+    }
+});
+
+// ==========================================
+// 2. NEW: DYNAMIC ROSTER TOGGLE ROUTE (కొత్త కోడ్)
+// ==========================================
+// @route   GET /api/patients/directory
+// @desc    Get filtered data based on selected button role
+router.get("/directory", async (req, res) => {
+    try {
+        // Dynamic requiring inside function prevents schema collision errors
+        const User = require("../models/User");
+
+        const { role } = req.query; 
+        let filteredRecords;
+        
+        if (role === "nutritionist") {
+            // Queries your User model documents where role matches nutritionist
+            filteredRecords = await User.find({ role: "nutritionist" }).select("fullName email role");
+        } else {
+            // Pulls complete records from Patient model database cleanly
+            filteredRecords = await Patient.find({}).populate("user", "fullName email");
+        }
+        
+        res.status(200).json(filteredRecords);
+    } catch (error) {
+        console.error("Database tracking pipeline error:", error);
+        res.status(500).json({ message: "Server directory validation failure" });
     }
 });
 
