@@ -9,11 +9,11 @@ const menu = [
     },
     {
         name: "About Us",
-        path: "/about_Us"
+        path: "/aboutUs"
     },
     {
         name: "Contact Us",
-        path: "/contact_Us"
+        path: "/contactUs"
     }
 ];
 export default menu;

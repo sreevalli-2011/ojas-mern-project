@@ -1,5 +1,6 @@
 import React from "react";
 import "./HomePage.css";
+import Footer from "../Footer/Footer";
 
 const Homepage = () => {
 return (
@@ -95,6 +96,8 @@ return (
         </div>
 
     </div>
+    
+    <Footer />
 
 </div>
 );

@@ -1,6 +1,7 @@
 import React from "react";
 import "./Features.css";
 import features from "../../../utility/FeaturesData";
+import Footer from "../Footer/Footer";
 
 const Features = () => {
     return (
@@ -24,7 +25,7 @@ const Features = () => {
                 </div>
 
             ))}
-
+        <Footer />
         </div>
     );
 };

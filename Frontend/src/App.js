@@ -4,7 +4,7 @@ import './App.css';
 import Navbar from './components/common/Navbar/Navbar';
 import HomePage from './components/common/HomePage/HomePage';
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
-import AboutUs from './components/common/AboutUs/About_Us';
+import AboutUs from './components/common/AboutUs/Aboutus';
 import ContactUs from './components/common/ContactUs/ContactUs';
 import Features from './components/common/Features/Features';
 import Login from './components/auth/Login/Login';
@@ -40,9 +40,9 @@ function App() {
 
         <Route path='/features' element={<Features />} />
 
-        <Route path='/about-us' element={<AboutUs />} />
+        <Route path='/aboutUs' element={<AboutUs />} />
 
-        <Route path='contact_Us' element={< ContactUs />} />
+        <Route path='contactUs' element={< ContactUs />} />
         <Route path='/login' element={<Login />} />
         <Route path='/loginNextpg' element={<LoginNextPg />} />
         <Route path='/signupn' element={<SignUpN />} />

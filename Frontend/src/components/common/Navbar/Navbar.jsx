@@ -62,7 +62,7 @@ const Navbar = () => {
                 )}
 
             </div>
-
+            
         </div>
     );
 };
